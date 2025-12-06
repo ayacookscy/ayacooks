@@ -11,7 +11,7 @@ export async function OrganizationStructuredData() {
     "@type": "Restaurant",
     name: "Aya Cooks",
     description:
-      "Limassol-based Middle Eastern author’s kitchen offering creative dishes in a cozy atmosphere",
+      "AYA Cooks — a Limassol-based Middle Eastern restaurant offering daily comfort food with an author’s touch. Fresh & fermented produce, oven-baked bread, and natural wine come together in a cozy, welcoming space that brings people around one table.",
     url: baseUrl,
     logo: {
       "@type": "ImageObject",
