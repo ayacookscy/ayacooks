@@ -14,6 +14,7 @@
   position: relative;
   width: 641px;
   height: 479px;
+  z-index: 100;
 }
 
 .tomatContainer {
@@ -73,6 +74,7 @@
   right: 7%;
   width: 459px;
   height: 210px;
+  z-index: -1;
 }
 
 .flavorContainer {
@@ -90,6 +92,7 @@
   left: 13.5%;
   width: 170px;
   height: 100px;
+  z-index: 10;
 }
 
 @media (max-width: 1439px) {
