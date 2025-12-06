@@ -7,6 +7,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // get CSP nonce
   const nonce = getCSPNonce();
   return (
     <html lang="en" nonce={nonce}>
