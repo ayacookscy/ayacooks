@@ -1,0 +1,315 @@
+/* Menu Page */
+.menuPage {
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: calc(100vw - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Titles */
+.stageTitle,
+.sweetSceneTitle,
+.allergensTitle,
+.barTitle,
+.signatureTitle,
+.beersCiderTitle,
+.softDrinksTitle,
+.coffeeTeaTitle,
+.wineTitle,
+.nonAlcoholicTitle,
+.wineTitle,
+.wineTitle {
+  margin-top: 152px;
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "CourierPrime", sans-serif;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  color: #212121;
+}
+
+.sweetSceneTitle {
+  margin-top: 60px;
+}
+
+.allergensTitle {
+  margin-top: 26px;
+}
+
+.barTitle {
+  margin-top: 42px;
+}
+
+.signatureTitle {
+  margin-top: 73px;
+  font-size: 23px;
+}
+
+.beersCiderTitle {
+  margin-top: 93px;
+}
+
+.softDrinksTitle {
+  margin-top: 73px;
+}
+
+.coffeeTeaTitle {
+  margin-top: 73px;
+}
+
+.wineTitle {
+  margin-top: 73px;
+  font-size: 23px;
+}
+
+.wineTitle {
+  margin-top: 73px;
+}
+
+/* Containers */
+.stageItems,
+.sweetSceneItems,
+.signatureItems,
+.beersCiderItems,
+.softDrinksItems,
+.coffeeTeaItems,
+.wineItems {
+  margin-top: 73px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sweetSceneItems {
+  margin-top: 24px;
+}
+
+.alergenItems {
+  margin-top: 56px;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(5, auto);
+  grid-auto-flow: column;
+  column-gap: 60px;
+  row-gap: 5px;
+}
+
+.signatureItems {
+  gap: 15px;
+}
+
+.beersCiderItems {
+  margin-top: 40px;
+  gap: 12px;
+}
+
+.softDrinksItems {
+  margin-top: 100px;
+  gap: 2px;
+}
+
+.coffeeTeaItems {
+  margin-top: 73px;
+  gap: 2px;
+}
+
+.wineItems {
+  margin-top: 73px;
+  gap: 12px;
+}
+
+/* Items */
+.stageItem,
+.alergen {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "CourierPrime", sans-serif;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  color: #212121;
+}
+
+.alergen {
+  font-size: 18.5px;
+}
+
+.stageItemAllergens {
+  font-style: italic;
+  font-weight: 400;
+  font-family: "CourierPrime", sans-serif;
+}
+
+.itemPrice {
+  font-style: normal;
+  font-weight: 700;
+  font-family: "CourierPrime", sans-serif;
+}
+
+.alergenBox {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.signatureBox {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-self: center;
+
+  &:nth-child(6) {
+    width: 90%;
+  }
+
+  &:nth-child(7) {
+    width: 82%;
+  }
+
+  &:nth-child(8) {
+    width: 76%;
+  }
+}
+
+.wineBox {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.boldText {
+  font-size: 21px;
+  font-weight: 700;
+  font-family: "CourierPrime", sans-serif;
+  font-style: normal;
+  line-height: 100%;
+  text-align: center;
+  color: #212121;
+}
+
+.regularText {
+  font-size: 21px;
+  font-weight: 400;
+  font-family: "CourierPrime", sans-serif;
+  font-style: normal;
+  line-height: 140%;
+  text-align: center;
+  color: #212121;
+}
+
+@media (max-width: 1439px) {
+  //1201
+
+  .stageTitle {
+    margin-top: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  //993
+
+  .menuPage {
+    width: calc(100vw - 40px);
+  }
+
+  .stageItem,
+  .alergen {
+    line-height: 140%;
+  }
+
+  .alergenItems {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(14, auto);
+    row-gap: 1px;
+    column-gap: 0;
+
+    .alergenBox:nth-child(5n + 1):not(:first-child) {
+      margin-top: 21px;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  //769
+}
+
+@media (max-width: 768px) {
+  //577
+
+  .menuPage {
+    margin-bottom: 50px;
+  }
+
+  .stageTitle,
+  .sweetSceneTitle,
+  .allergensTitle,
+  .barTitle,
+  .signatureTitle,
+  .beersCiderTitle,
+  .softDrinksTitle,
+  .coffeeTeaTitle,
+  .wineTitle,
+  .nonAlcoholicTitle,
+  .wineTitle,
+  .wineTitle,
+  .boldText,
+  .regularText,
+  .stageItem,
+  .alergen {
+    font-size: 19px;
+  }
+
+  .signatureTitle,
+  .wineTitle {
+    font-size: 21px;
+  }
+
+  .alergen {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 576px) {
+  .stageTitle,
+  .sweetSceneTitle,
+  .allergensTitle,
+  .barTitle,
+  .signatureTitle,
+  .beersCiderTitle,
+  .softDrinksTitle,
+  .coffeeTeaTitle,
+  .wineTitle,
+  .nonAlcoholicTitle,
+  .wineTitle,
+  .wineTitle,
+  .boldText,
+  .regularText,
+  .stageItem,
+  .alergen {
+    font-size: 16px;
+  }
+
+  .signatureTitle,
+  .wineTitle {
+    font-size: 18px;
+  }
+
+  .alergen {
+    font-size: 14px;
+  }
+
+  .nonAlcoholicTitle,
+  .softDrinksItems {
+    margin-top: 73px;
+  }
+}
