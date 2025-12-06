@@ -151,12 +151,14 @@ export const WelcomePage = () => {
         animate="visible"
         className={styles.phoneContainer}
       >
-        <Image
-          src={PhoneImg}
-          alt="Phone Image"
-          fill
-          style={{ objectFit: "contain" }}
-        />
+        <Link href="tel:+35797999091">
+          <Image
+            src={PhoneImg}
+            alt="Phone Image"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </Link>
       </motion.div>
 
       <motion.div
@@ -181,12 +183,17 @@ export const WelcomePage = () => {
         animate="visible"
         className={styles.adressContainer}
       >
-        <Image
-          src={AdressImg}
-          alt="Adress Image"
-          fill
-          style={{ objectFit: "contain" }}
-        />
+        <Link
+          href="https://maps.app.goo.gl/sa4jY4Q2USkkQhSZ6?g_st=ipc"
+          target="_blank"
+        >
+          <Image
+            src={AdressImg}
+            alt="Adress Image"
+            fill
+            style={{ objectFit: "contain" }}
+          />
+        </Link>
       </motion.div>
     </div>
   );

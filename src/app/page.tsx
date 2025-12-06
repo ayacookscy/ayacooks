@@ -8,13 +8,13 @@ export async function generateMetadata(): Promise<Metadata> {
   return {
     title: "Aya Cooks | Limassol Middle Eastern Kitchen",
     description:
-      "Limassol-based Middle Eastern author’s kitchen serving creative mezze, handmade breads and seasonal dishes in a cozy atmosphere.",
+      "AYA Cooks — a Limassol-based Middle Eastern restaurant offering daily comfort food with an author’s touch. Fresh & fermented produce, oven-baked bread, and natural wine come together in a cozy, welcoming space that brings people around one table.",
     keywords:
       "Aya Cooks, Limassol restaurant, Middle Eastern cuisine, author's kitchen, Cyprus food",
     openGraph: {
       title: "Aya Cooks – Limassol Middle Eastern Kitchen",
       description:
-        "Limassol-based Middle Eastern author’s kitchen serving creative mezze, handmade breads and seasonal dishes in a cozy atmosphere.",
+        "AYA Cooks — a Limassol-based Middle Eastern restaurant offering daily comfort food with an author’s touch. Fresh & fermented produce, oven-baked bread, and natural wine come together in a cozy, welcoming space that brings people around one table.",
       type: "website",
       siteName: "Aya Cooks",
       images: [
@@ -30,7 +30,7 @@ export async function generateMetadata(): Promise<Metadata> {
       card: "summary_large_image",
       title: "Aya Cooks – Limassol Middle Eastern Kitchen",
       description:
-        "Limassol-based Middle Eastern author’s kitchen serving creative mezze, handmade breads and seasonal dishes in a cozy atmosphere.",
+        "AYA Cooks — a Limassol-based Middle Eastern restaurant offering daily comfort food with an author’s touch. Fresh & fermented produce, oven-baked bread, and natural wine come together in a cozy, welcoming space that brings people around one table.",
       images: [`${baseUrl}/preview.png`],
     },
     alternates: {
