@@ -89,7 +89,7 @@ export const WelcomePage = () => {
         animate="visible"
         className={styles.instagramContainer}
       >
-        <Link href="https://www.instagram.com/aya.cooks/">
+        <Link href="https://www.instagram.com/aya.cooks.cy">
           <Image
             src={InstagramImg}
             alt="Instagram Image"
