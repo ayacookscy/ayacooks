@@ -28,6 +28,12 @@ export default function RootLayout({
         <link rel="manifest" href="/favicons/manifest.webmanifest" />
         <meta name="theme-color" content="#f6f6ef" />
 
+        {/* Social preview images */}
+        <meta property="og:image" content="https://ayacooks.cy/preview.png" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta name="twitter:image" content="https://ayacooks.cy/preview.png" />
+
         {/* Facebook Meta Pixel Code */}
         <Script id="facebook-pixel" strategy="afterInteractive" nonce={nonce}>
           {`!function(f,b,e,v,n,t,s)
