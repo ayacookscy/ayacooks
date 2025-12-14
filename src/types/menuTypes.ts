@@ -6,6 +6,7 @@ export interface MenuItem {
   description?: string;
   regularName?: string;
   descriptionBold?: string;
+  lunch?: boolean;
 }
 
 export interface MenuSection {

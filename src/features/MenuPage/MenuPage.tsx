@@ -19,6 +19,7 @@ export const MenuPage = () => {
             name={item.name}
             allergens={item.allergens}
             price={item.price}
+            lunch={item.lunch}
           />
         ))}
       </div>
@@ -32,9 +33,12 @@ export const MenuPage = () => {
             name={item.name}
             allergens={item.allergens}
             price={item.price}
+            lunch={item.lunch}
           />
         ))}
       </div>
+
+      <h3 className={styles.allergensTitle}>L - available at lunch time</h3>
 
       <h3 className={styles.allergensTitle}>
         Dear guests, please pay attention on allergens

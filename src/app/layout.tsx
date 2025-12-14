@@ -62,6 +62,7 @@ fbq('track', 'PageView');`}
           />
         </noscript>
         {children}
+        <div id="video-pop-up" />
       </body>
     </html>
   );
