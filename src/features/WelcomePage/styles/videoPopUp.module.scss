@@ -5,11 +5,14 @@
   transform: translate(-50%, -50%);
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  // background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
   display: flex;
   justify-content: center;
   align-items: center;
+  overscroll-behavior: none;
+  touch-action: none;
+
   video {
     width: 50dvh;
     height: auto;
