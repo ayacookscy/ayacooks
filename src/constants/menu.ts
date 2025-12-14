@@ -147,7 +147,7 @@ export const menu: Record<string, MenuSection> = {
         description: "Non/Alc Gin, kiwi, tarragon syrup and ascorbic acid",
       },
       {
-        name: "TonkaS trawberry Butter 0% Alc",
+        name: "Tonka Strawberry Butter 0% Alc",
         price: 5.5,
         description:
           "H₂O Infused tonkaand butter, stravan syrup and magic acid",
@@ -168,7 +168,7 @@ export const menu: Record<string, MenuSection> = {
         name: "Spicy Carrot 0% Alc",
         price: 8,
         description:
-          "Non/Alc Whiskey infusedraisins, wheycarrotsyrup, tabasco, smokedsalt, citric acid and vegan foamer",
+          "Non/Alc Whiskey infused raisins, whey carrot syrup, tabasco, smoked salt, citric acid and vegan foamer",
       },
       {
         name: "Tahini",
@@ -180,7 +180,7 @@ export const menu: Record<string, MenuSection> = {
         name: "Kirsch Vodka",
         price: 14,
         description:
-          "infused with date, cherry, yuzu, smoked salt, fermented tabasco with ginger and citric acid",
+          "Vodka infused with date, cherry, yuzu, smoked salt, fermented tabasco with ginger and citric acid",
       },
     ],
   },
