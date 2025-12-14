@@ -24,8 +24,15 @@ export const VideoPopUp = ({ onClose }: VideoPopUpProps) => {
         autoPlay
         muted
         loop
+        playsInline
+        disablePictureInPicture
+        controls={false}
+        controlsList="nodownload nofullscreen noplaybackrate"
         onCanPlay={() => setVideoReady(true)}
-        style={{ visibility: videoReady ? "visible" : "hidden" }}
+        style={{
+          visibility: videoReady ? "visible" : "hidden",
+          pointerEvents: "none",
+        }}
       >
         <source src="/videos/aya-cooks.webm" type="video/webm" />
         <source src="/videos/aya-cooks.mp4" type="video/mp4" />
