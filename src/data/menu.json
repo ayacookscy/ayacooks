@@ -4,93 +4,107 @@
     "items": [
       {
         "name": "Flat pita bread, tarama & bottarga",
-        "allergens": [1],
-        "price": 5.5
+        "allergens": [1, 7],
+        "price": 5.5,
+        "lunch": true
       },
       {
         "name": "Hallah brioche bread with tahini and sjüg",
         "allergens": [6, 3, 7, 1, 11],
-        "price": 4.5
+        "price": 4.5,
+        "lunch": true
       },
       {
         "name": "Roasted beetroot salad, seasonal citrus, avocado & purslane",
-        "allergens": [9],
+        "allergens": [],
         "price": 9
       },
       {
         "name": "Hummus, roasted shiitake mushrooms, green sauce, hazelnut dukkah and oregano",
         "allergens": [8, 11, 13],
-        "price": 10
+        "price": 10,
+        "lunch": true
       },
       {
-        "name": "Grilled crispy pita filled with mix of cheese, tomato & grape salad",
+        "name": "Grilled crispy pita filled with mix of cheese, tomato & mango salad",
         "allergens": [1, 7],
-        "price": 12
+        "price": 12,
+        "lunch": true
       },
       {
         "name": "Smoked eggplant fritters, aioli, tomato jam & fried sage",
         "allergens": [11, 7, 1],
-        "price": 8
+        "price": 9,
+        "lunch": true
       },
       {
         "name": "Fried feta with fermented, pickle and roasted grapes",
-        "allergens": [7, 11, 12],
+        "allergens": [7, 11],
         "price": 11
       },
       {
         "name": "Green apple salad",
         "allergens": [8, 7],
-        "price": 8
+        "price": 8,
+        "lunch": true
       },
       {
         "name": "Roasted seasonal pumpkin, tahini, yogurt, dried anari cheese & trahanas granola",
-        "allergens": [11, 7, 8, 12],
-        "price": 10
+        "allergens": [11, 7, 8],
+        "price": 10,
+        "lunch": true
       },
       {
         "name": "Charred cauliflower with tahini, pomegranate, roasted pistachios & dried roses",
         "allergens": [11, 8],
-        "price": 14
+        "price": 15
       },
       {
         "name": "Sea bream crudo, citrus oil, labneh, pistachio & rose harissa",
-        "allergens": [4, 7, 1],
-        "price": 15
+        "allergens": [4, 7, 1, 8],
+        "price": 15,
+        "lunch": true
       },
       {
         "name": "Grilled octopus, aioli, potato and red pepper & tomato salsa",
         "allergens": [7, 14],
-        "price": 18
+        "price": 23,
+        "lunch": true
       },
       {
         "name": "BBQ fish — catch of the day",
         "allergens": [4, 7],
-        "price": 26
+        "price": 26,
+        "lunch": true
       },
       {
         "name": "Chicken skewer with harissa barbecue sauce & za’atar",
         "allergens": [1, 6],
-        "price": 18
+        "price": 18,
+        "lunch": true
       },
       {
         "name": "Kebab Asli on grilled pita, roasted chili & tomatoes, herb salad with tahini & sjüg",
-        "allergens": [6, 1, 11],
-        "price": 17
+        "allergens": [1, 11],
+        "price": 18,
+        "lunch": true
       },
       {
         "name": "Black Angus beef short rib, slow-cooked, honey & Green tahini",
         "allergens": [6, 11, 1],
-        "price": 24
+        "price": 27
       },
       {
-        "name": "Za’atar Cyprus potatoes cooked two ways",
+        "name": "Za’atar cyprus potatoes cooked two ways",
         "allergens": [],
-        "price": 4
+        "price": 4,
+        "lunch": true
       },
       {
         "name": "Seasonal green salad",
-        "allergens": [8],
-        "price": 4
+        "allergens": [],
+        "price": 4,
+        "lunch": true
       }
     ]
   },
@@ -98,19 +112,25 @@
     "name": "Sweet scene",
     "items": [
       {
+        "name": "Seasonal crafted Gelato by Tartufo",
+        "price": 3.5
+      },
+      {
         "name": "Choux stuffed with chocolate mousse, whipped cream & red plums jam",
-        "allergens": [1, 3, 7, 8],
+        "allergens": [1, 3, 7],
         "price": 10
       },
       {
         "name": "Kaffir leaves pavlova, lemon curd, confit lemons & whipped cream",
-        "allergens": [3, 7, 8],
-        "price": 9
+        "allergens": [3, 7],
+        "price": 9,
+        "lunch": true
       },
       {
         "name": "Hallah French toast with seasonal fruit and labneh cream",
-        "allergens": [1, 3, 7, 8, 11],
-        "price": 8
+        "allergens": [1, 3, 7, 11],
+        "price": 8,
+        "lunch": true
       }
     ]
   },
@@ -128,7 +148,7 @@
         "description": "Non/Alc Gin, kiwi, tarragon syrup and ascorbic acid"
       },
       {
-        "name": "TonkaS trawberry Butter 0% Alc",
+        "name": "Tonka Strawberry Butter 0% Alc",
         "price": 5.5,
         "description": "H₂O Infused tonkaand butter, stravan syrup and magic acid"
       },
@@ -145,7 +165,7 @@
       {
         "name": "Spicy Carrot 0% Alc",
         "price": 8,
-        "description": "Non/Alc Whiskey infusedraisins, wheycarrotsyrup, tabasco, smokedsalt, citric acid and vegan foamer"
+        "description": "Non/Alc Whiskey infused raisins, whey carrot syrup, tabasco, smoked salt, citric acid and vegan foamer"
       },
       {
         "name": "Tahini",
@@ -155,7 +175,7 @@
       {
         "name": "Kirsch Vodka",
         "price": 14,
-        "description": "infused with date, cherry, yuzu, smoked salt, fermented tabasco with ginger and citric acid"
+        "description": "Vodka infused with date, cherry, yuzu, smoked salt, fermented tabasco with ginger and citric acid"
       }
     ]
   },
@@ -229,7 +249,7 @@
     "name": "Coffee / Tea",
     "items": [
       { "description": "Water Still / Sparkling", "price": 4 },
-      { "description": "Kombucha", "price": 4 },
+      { "description": "Kombucha", "price": 6 },
       { "description": "Sodas & tonics", "price": 3 },
       { "description": "Classic soft drinks", "price": 3 },
       { "description": "Fresh citrus juice", "price": 5 }

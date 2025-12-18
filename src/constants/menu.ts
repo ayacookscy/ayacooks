@@ -114,6 +114,11 @@ export const menu: Record<string, MenuSection> = {
     name: "Sweet scene",
     items: [
       {
+        name: "Seasonal crafted Gelato by Tartufo",
+        price: 3.5,
+        lunch: true,
+      },
+      {
         name: "Choux stuffed with chocolate mousse, whipped cream & red plums jam",
         allergens: [1, 3, 7],
         price: 10,
@@ -254,7 +259,7 @@ export const menu: Record<string, MenuSection> = {
     name: "Coffee / Tea",
     items: [
       { description: "Water Still / Sparkling", price: 4 },
-      { description: "Kombucha", price: 4 },
+      { description: "Kombucha", price: 6 },
       { description: "Sodas & tonics", price: 3 },
       { description: "Classic soft drinks", price: 3 },
       { description: "Fresh citrus juice", price: 5 },
