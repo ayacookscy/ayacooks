@@ -1,0 +1,83 @@
+.container {
+  max-width: 90vw;
+  margin: 0 auto;
+  padding: 60px 20px 100px;
+  font-family: "Courier Prime", monospace;
+  color: #212121;
+  text-align: center;
+}
+
+.heading {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 48px;
+}
+
+.headingHighlight {
+  margin-top: 10px;
+  display: block;
+  font-weight: 500;
+}
+
+.subHeading {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 40px 0 12px;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 620px;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+}
+
+.orderedList {
+  counter-reset: step;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  text-align: left;
+  max-width: 900px;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.orderedList > li {
+  counter-increment: step;
+  margin-bottom: 12px;
+}
+
+.orderedList > li::before {
+  content: counter(step) ". ";
+  font-weight: 500;
+}
+
+.note {
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+  .subHeading {
+    font-size: 20px;
+  }
+  .list,
+  .orderedList {
+    font-size: 16px;
+  }
+}

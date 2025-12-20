@@ -1,0 +1,120 @@
+.card {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 40px 30px;
+  font-family: "Courier Prime", monospace;
+  text-align: center;
+  color: #212121;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 600;
+  font-family: "Courier Prime", monospace;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.4;
+  font-family: "Courier Prime", monospace;
+  margin-bottom: 16px;
+}
+
+.link {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #5e17eb;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carrotWrapper {
+  position: relative;
+  top: -100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carrotImg {
+  width: 60%;
+  height: auto;
+}
+
+.carrotButton {
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "Courier Prime", monospace;
+  background: transparent;
+  font-size: 20px;
+  cursor: pointer;
+  color: #6b8c4f;
+  border: none;
+  text-decoration: underline;
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.carrotImg {
+  transform: rotate(58deg);
+}
+
+@media (max-width: 992px) {
+  //769
+  .carrotButton {
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-top: 10px;
+    padding: 40px 16px;
+    height: 100vh;
+    overflow: hidden;
+    overscroll-behavior: none;
+    touch-action: none;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .carrotImg {
+    width: 160px;
+  }
+
+  .carrotButton {
+    font-size: 16px;
+  }
+
+  .carrotImg {
+    width: 60%;
+  }
+
+  .carrotButton {
+    position: absolute;
+    top: 5px;
+    font-size: 14px;
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
