@@ -83,10 +83,6 @@
   .card {
     margin-top: 10px;
     padding: 40px 16px;
-    height: 100vh;
-    overflow: hidden;
-    overscroll-behavior: none;
-    touch-action: none;
   }
 
   .title {
@@ -95,6 +91,11 @@
 
   .text {
     font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .carrotImg {
