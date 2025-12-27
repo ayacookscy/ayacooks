@@ -11,13 +11,11 @@ import FlavorImg from "@/assets/welcomeScreen/flav.svg";
 import PhoneImg from "@/assets/welcomeScreen/phoneNumber.svg";
 import InstagramImg from "@/assets/welcomeScreen/instagram.svg";
 import Link from "next/link";
-import { motion, Variants, AnimatePresence } from "framer-motion";
+import { motion, Variants } from "framer-motion";
 import styles from "@/features/WelcomePage/styles/welcomePage.module.scss";
-import { useEffect, useState } from "react";
-import { VideoPopUp } from "./ui/VideoPopUp";
 
 export const WelcomePage = () => {
-  const [showVideoPopUp, setShowVideoPopUp] = useState(false);
+  // const [showVideoPopUp, setShowVideoPopUp] = useState(false);
 
   const totalItems = 9;
   const itemVariants: Variants = {
@@ -36,11 +34,11 @@ export const WelcomePage = () => {
     }),
   };
 
-  useEffect(() => {
-    const timer = setTimeout(() => setShowVideoPopUp(true), 1000);
+  // useEffect(() => {
+  //   const timer = setTimeout(() => setShowVideoPopUp(true), 1000);
 
-    return () => clearTimeout(timer);
-  }, []);
+  //   return () => clearTimeout(timer);
+  // }, []);
 
   return (
     <div className={styles.welcomePage}>
@@ -205,11 +203,11 @@ export const WelcomePage = () => {
           />
         </Link>
       </motion.div>
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {showVideoPopUp && (
           <VideoPopUp onClose={() => setShowVideoPopUp(false)} />
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
     </div>
   );
 };
