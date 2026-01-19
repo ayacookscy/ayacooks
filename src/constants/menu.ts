@@ -1,5 +1,10 @@
 import { Allergen, MenuSection } from "@/types/menuTypes";
 
+// Auto-generated from src/data/menu (19.01).json on 2026-01-19
+// The structure of `menu` MUST mirror the JSON one "1-to-1" so that the app
+// renders exactly the same positions / order / flags as the kitchen menu.
+// Please keep the keys order intact – some UI sections rely on it.
+
 export const menu: Record<string, MenuSection> = {
   stages: {
     name: "Stages",
@@ -34,15 +39,20 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Smoked eggplant fritters, aioli, tomato jam & fried sage",
+        name: "Smoked eggplant fritters, & pickled apples & aioli",
         allergens: [11, 7, 1],
         price: 9,
         lunch: true,
       },
       {
-        name: "Fried feta with fermented, pickle and roasted grapes",
-        allergens: [7, 11],
-        price: 11,
+        name: "Fried halloumi, tomatoes & seasonal citruses, chili honey",
+        allergens: [7],
+        price: 13,
+      },
+      {
+        name: "Strawberry & snow pease salad with hazelnut and dry anari",
+        allergens: [7, 8],
+        price: 9,
       },
       {
         name: "Green apple salad",
@@ -57,9 +67,16 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Charred cauliflower with tahini, pomegranate, roasted pistachios & dried roses",
-        allergens: [11, 8],
-        price: 15,
+        name: "Charred kholrabi, labneh and sjug",
+        allergens: [7],
+        price: 12,
+        lunch: true,
+      },
+      {
+        name: "Grilled broccolini, crispy chili sauce, tahini and peanuts",
+        allergens: [8, 11],
+        price: 11,
+        lunch: true,
       },
       {
         name: "Sea bream crudo, citrus oil, labneh, pistachio & rose harissa",
@@ -141,12 +158,6 @@ export const menu: Record<string, MenuSection> = {
     name: "Signature",
     items: [
       {
-        name: "Hibiscus Mango",
-        price: 12,
-        description:
-          "Averna amaro, lillet bianco, homemade hibiscus mango soda, passionfruit and mango sherbet",
-      },
-      {
         name: "Kiwi Tarragon 0% Alc",
         price: 8,
         description: "Non/Alc Gin, kiwi, tarragon syrup and ascorbic acid",
@@ -154,8 +165,19 @@ export const menu: Record<string, MenuSection> = {
       {
         name: "Tonka Strawberry Butter 0% Alc",
         price: 5.5,
+        description: "H₂O Infused tonkaand butter, stravan syrup and magic acid",
+      },
+      {
+        name: "Spicy Carrot 0% Alc",
+        price: 8,
         description:
-          "H₂O Infused tonkaand butter, stravan syrup and magic acid",
+          "Non/Alc Whiskey infused raisins, whey carrot syrup, tabasco, smoked salt, citric acid and vegan foamer",
+      },
+      {
+        name: "Hibiscus Mango",
+        price: 12,
+        description:
+          "Averna amaro, lillet bianco, homemade hibiscus mango soda, passionfruit and mango sherbet",
       },
       {
         name: "Not Umami",
@@ -170,19 +192,13 @@ export const menu: Record<string, MenuSection> = {
           "Mezcal infused peach, homemade peach cordial, apricot and ascorbic acid",
       },
       {
-        name: "Spicy Carrot 0% Alc",
-        price: 8,
-        description:
-          "Non/Alc Whiskey infused raisins, whey carrot syrup, tabasco, smoked salt, citric acid and vegan foamer",
-      },
-      {
         name: "Tahini",
         price: 12,
         description:
-          "Rum infused with banana peel, tahini, pandan usamary llifolius, banana milk and lactic acid",
+          "Rum infused with banana peel, tahini, Pandanus Amaryllifolius, banana milk and lactic acid",
       },
       {
-        name: "Kirsch Vodka",
+        name: "Kirsch",
         price: 14,
         description:
           "Vodka infused with date, cherry, yuzu, smoked salt, fermented tabasco with ginger and citric acid",
@@ -446,11 +462,10 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 50,
       },
       {
-        name: "Matías Riccitelli Kung Fu Malbec",
-        description: "/ Malbec / ARG",
+        name: "Papargyriou Le Roi Des Montagnes",
+        description: "/ Syrah / CRC",
         descriptionBold: "(N)",
-        price: 13,
-        bottlePrice: 60,
+        bottlePrice: 75,
       },
       {
         name: "Nine Daughters Xinomavro Single Vineyard",
@@ -461,6 +476,13 @@ export const menu: Record<string, MenuSection> = {
         name: "Teliani Valley Winery 97 Saperavi Unfiltered",
         description: "/ Saperavi / GEO",
         bottlePrice: 60,
+      },
+      {
+        name: "Voyni Panagia Baraba Yiannis",
+        description: "/ Maratheftiko / CYP",
+        descriptionBold: "(N)",
+        price: 10,
+        bottlePrice: 50,
       },
     ],
   },
