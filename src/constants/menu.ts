@@ -1,6 +1,6 @@
 import { Allergen, MenuSection } from "@/types/menuTypes";
 
-// Auto-generated from src/data/menu (19.01).json on 2026-01-19
+// Auto-generated from src/data/menu (06.02) (1).json on 2026-02-06
 // The structure of `menu` MUST mirror the JSON one "1-to-1" so that the app
 // renders exactly the same positions / order / flags as the kitchen menu.
 // Please keep the keys order intact – some UI sections rely on it.
@@ -33,12 +33,6 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Grilled crispy pita filled with mix of cheese, tomato & mango salad",
-        allergens: [1, 7],
-        price: 12,
-        lunch: true,
-      },
-      {
         name: "Smoked eggplant fritters, & pickled apples & aioli",
         allergens: [11, 7, 1],
         price: 9,
@@ -61,10 +55,9 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Roasted seasonal pumpkin, tahini, yogurt, dried anari cheese & trahanas granola",
-        allergens: [11, 7, 8],
-        price: 10,
-        lunch: true,
+        name: "Roasted carrots, shallot, lentils and green tahini",
+        allergens: [11],
+        price: 12,
       },
       {
         name: "Charred kholrabi, labneh and sjug",
@@ -85,6 +78,11 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
+        name: "Tempura anchovy, spicy aioli and persimmon",
+        allergens: [1, 4, 7],
+        price: 10,
+      },
+      {
         name: "Grilled octopus, aioli, potato and red pepper & tomato salsa",
         allergens: [7, 14],
         price: 23,
@@ -97,8 +95,14 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Chicken skewer with harissa barbecue sauce & za’atar",
+        name: "Chicken skewer with harissa barbecue sauce & za'atar",
         allergens: [1, 6],
+        price: 18,
+        lunch: true,
+      },
+      {
+        name: "Schnitzel with capers sauce and fennel salad",
+        allergens: [1, 3, 7, 9],
         price: 18,
         lunch: true,
       },
@@ -136,15 +140,14 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Choux stuffed with chocolate mousse, whipped cream & red plums jam",
-        allergens: [1, 3, 7],
-        price: 10,
+        name: "Chocolate balagan with hazelnut, gelato, halva and olive oil",
+        allergens: [1, 3, 7, 8, 11],
+        price: 11,
       },
       {
         name: "Kaffir leaves pavlova, lemon curd, confit lemons & whipped cream",
         allergens: [3, 7],
         price: 9,
-        lunch: true,
       },
       {
         name: "Hallah French toast with seasonal fruit and labneh cream",
@@ -293,6 +296,7 @@ export const menu: Record<string, MenuSection> = {
       {
         name: "Acala / Spritz Style Sparkling Tea",
         description: "/ Kombucha-style Tea / LTU",
+        price: 8,
         bottlePrice: 30,
       },
     ],
@@ -301,16 +305,19 @@ export const menu: Record<string, MenuSection> = {
     name: "Pet-Nat & Sparkling",
     items: [
       {
+        name: "Bortolomiol Prosecco DOC",
+        description: "Treviso Miol / Glera / ITA",
+        bottlePrice: 29,
+      },
+      {
         name: "Vilmart Cuvée Rubis",
         description: "/ Chardonnay, Pinot Noir / FRA",
-        price: 35,
-        bottlePrice: 80,
+        bottlePrice: 100,
       },
       {
         name: "Vilmart Brut Réserve",
         description: "/ Chardonnay, Pinot Noir / FRA ",
-        price: 80,
-        bottlePrice: 100,
+        bottlePrice: 80,
       },
       {
         name: "Cosmic Vinyaters Fades del Calcari",
@@ -337,6 +344,18 @@ export const menu: Record<string, MenuSection> = {
   wineWhite: {
     name: "White",
     items: [
+      {
+        name: "Ottella Lugana",
+        description: "Lombardy / Trebbiano / ITA",
+        price: 9,
+        bottlePrice: 39,
+      },
+      {
+        name: "Baumberger",
+        description: "Glow Glow / Muscateller / AUT (N)",
+        price: 11,
+        bottlePrice: 55,
+      },
       {
         name: "Anatolikos FineAssyrtiko",
         description: "/ Assyrtiko / GRC",
@@ -371,13 +390,6 @@ export const menu: Record<string, MenuSection> = {
         name: "Chatzivaritis Estate Vre",
         description: "/ Malagouzia / GRC",
         bottlePrice: 50,
-      },
-      {
-        name: "Heinrich Naked White",
-        description: "/ Chardonnay, Pinot Blanc, Grüner Veltliner / AUT",
-        descriptionBold: "(N)",
-        price: 10,
-        bottlePrice: 55,
       },
       {
         name: "Domaine des Malandes",
@@ -449,10 +461,36 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 55,
       },
       {
+        name: "Matías Riccitelli Hey Malbec",
+        description: "/ Malbec / Mendoza / ARG",
+        descriptionBold: "(N)",
+        price: 13,
+        bottlePrice: 60,
+      },
+      {
+        name: "Voyni Panagia Baraba Yiannis",
+        description: "Maratheftiko / CYP",
+        descriptionBold: "(N)",
+        price: 10,
+        bottlePrice: 50,
+      },
+      {
+        name: "Ktima Dymatou",
+        description: "/ Xynisteri, Morokanella, Vasilissa / CYP",
+        descriptionBold: "(N)",
+        bottlePrice: 55,
+      },
+      {
         name: "Chatzivaritis Estate Carbonic Negoska",
         description: "/ Negoska / GRC",
         descriptionBold: "(N)",
         bottlePrice: 50,
+      },
+      {
+        name: "Poderi Boscarelli De Ferrari ",
+        description: "/ Sangiovese / Toscana / ITA",
+        price: 10,
+        bottlePrice: 40,
       },
       {
         name: "Frank Cornelissen Susucaru Rosso",
@@ -468,20 +506,18 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 75,
       },
       {
+        name: "Marchesi di Gresy Barbera d'Asti",
+        description: "/ Barbera / ITA",
+        bottlePrice: 46,
+      },
+      {
         name: "Nine Daughters Xinomavro Single Vineyard",
         description: "/ Xinomavro / GRC",
         bottlePrice: 55,
       },
       {
-        name: "Teliani Valley Winery 97 Saperavi Unfiltered",
-        description: "/ Saperavi / GEO",
-        bottlePrice: 60,
-      },
-      {
-        name: "Voyni Panagia Baraba Yiannis",
-        description: "/ Maratheftiko / CYP",
-        descriptionBold: "(N)",
-        price: 10,
+        name: "Tenuta Santa Maria Valpolicella",
+        description: "/ Corvina / ITA",
         bottlePrice: 50,
       },
     ],
