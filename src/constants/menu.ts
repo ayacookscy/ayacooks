@@ -1,6 +1,6 @@
 import { Allergen, MenuSection } from "@/types/menuTypes";
 
-// Auto-generated from src/data/menu (06.02) (1).json on 2026-02-06
+// Auto-generated from src/data/menu (03.03) (1).json on 2026-03-03
 // The structure of `menu` MUST mirror the JSON one "1-to-1" so that the app
 // renders exactly the same positions / order / flags as the kitchen menu.
 // Please keep the keys order intact – some UI sections rely on it.
@@ -33,13 +33,19 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
+        name: "Grilled crispy pita filled with mix of cheese, tomato & mango salad",
+        allergens: [1, 7],
+        price: 12,
+        lunch: true,
+      },
+      {
         name: "Smoked eggplant fritters, & pickled apples & aioli",
         allergens: [11, 7, 1],
         price: 9,
         lunch: true,
       },
       {
-        name: "Fried halloumi, tomatoes & seasonal citruses, chili honey",
+        name: "Grilled halloumi, tomatoes & seasonal citruses, chili honey",
         allergens: [7],
         price: 13,
       },
@@ -78,11 +84,6 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Tempura anchovy, spicy aioli and persimmon",
-        allergens: [1, 4, 7],
-        price: 10,
-      },
-      {
         name: "Grilled octopus, aioli, potato and red pepper & tomato salsa",
         allergens: [7, 14],
         price: 23,
@@ -95,7 +96,7 @@ export const menu: Record<string, MenuSection> = {
         lunch: true,
       },
       {
-        name: "Chicken skewer with harissa barbecue sauce & za'atar",
+        name: "Chicken skewer with harissa barbecue sauce & za’atar",
         allergens: [1, 6],
         price: 18,
         lunch: true,
@@ -155,6 +156,12 @@ export const menu: Record<string, MenuSection> = {
         price: 8,
         lunch: true,
       },
+      {
+        name: "Choux stuffed with chocolate mousse, whipped cream & seasonal citrus jam",
+        allergens: [1, 3, 7],
+        price: 10,
+        lunch: true,
+      },
     ],
   },
   signature: {
@@ -166,9 +173,10 @@ export const menu: Record<string, MenuSection> = {
         description: "Non/Alc Gin, kiwi, tarragon syrup and ascorbic acid",
       },
       {
-        name: "Tonka Strawberry Butter 0% Alc",
-        price: 5.5,
-        description: "H₂O Infused tonkaand butter, stravan syrup and magic acid",
+        name: "Pink Bang 0% Alc",
+        price: 6,
+        description:
+          "Non/Alc Martini Vibrante, grapefruit shrub, malic acid, and pink grapefruit soda",
       },
       {
         name: "Spicy Carrot 0% Alc",
@@ -183,10 +191,16 @@ export const menu: Record<string, MenuSection> = {
           "Averna amaro, lillet bianco, homemade hibiscus mango soda, passionfruit and mango sherbet",
       },
       {
-        name: "Not Umami",
+        name: "Apple Pie",
         price: 12,
         description:
-          "Tequila reposado infused with tomato skin, clarified pineapple water, lemongrass and lactic acid",
+          "Calvados infused Granny Smith apples, maple-cinnamon syrup, citric acid, apple foam",
+      },
+      {
+        name: "No Name",
+        price: 13,
+        description:
+          "Parsley infused gin, yogurt, mastiha fat washed with mayonnaise, celery,\nyuzu, and citric acid",
       },
       {
         name: "Smoked B*tch",
@@ -195,16 +209,16 @@ export const menu: Record<string, MenuSection> = {
           "Mezcal infused peach, homemade peach cordial, apricot and ascorbic acid",
       },
       {
-        name: "Tahini",
-        price: 12,
+        name: "Halva",
+        price: 13,
         description:
-          "Rum infused with banana peel, tahini, Pandanus Amaryllifolius, banana milk and lactic acid",
+          "Bourbon infused halva, brown butter syrup emulsion, bitter caramel, toffee, cacao plant milk",
       },
       {
-        name: "Kirsch",
-        price: 14,
+        name: "GOAT",
+        price: 12,
         description:
-          "Vodka infused with date, cherry, yuzu, smoked salt, fermented tabasco with ginger and citric acid",
+          "Dry curaçao, white vermouth,genmaicha cordial, sake  pear, citric acid, and saline solution",
       },
     ],
   },
@@ -254,15 +268,24 @@ export const menu: Record<string, MenuSection> = {
         description: "Brewing Smoky Stout 6% 0,33",
       },
       {
-        regularName: "Vocation Brewery",
-        name: "Death By Cherries",
-        price: 8,
+        regularName: "Wignac Apple Cider Bio",
+        price: 9,
         description: "4,5% 0,33",
+      },
+      {
+        regularName: "Salt Mystic Fizz Tropical NEIPA",
+        price: 8,
+        description: "3,5% 0,44",
+      },
+      {
+        regularName: "Lab Rat Raspberry Ripple Ice Cream",
+        price: 8,
+        description: "4,5% 0,44",
       },
     ],
   },
-  softDrinks: {
-    name: "Soft Drinks",
+  coffeeTea: {
+    name: "Coffee/Tea",
     items: [
       { description: "Americano", price: 4 },
       { description: "Cappuccino", price: 4 },
@@ -274,8 +297,8 @@ export const menu: Record<string, MenuSection> = {
       { description: "Tea", price: 5 },
     ],
   },
-  coffeeTea: {
-    name: "Coffee / Tea",
+  softDrinks: {
+    name: "Soft Drinks",
     items: [
       { description: "Water Still / Sparkling", price: 4 },
       { description: "Kombucha", price: 6 },
