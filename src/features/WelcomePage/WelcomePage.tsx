@@ -61,6 +61,7 @@ export const WelcomePage = () => {
         <Link
           target="_blank"
           href="https://www.sevenrooms.com/explore/ayacooks/reservations/create/search/?date=2025-10-08&party_size=2"
+          data-gtm="book-now"
         >
           <Image
             src={BookNowImg}
@@ -79,7 +80,7 @@ export const WelcomePage = () => {
         animate="visible"
         className={styles.menuContainer}
       >
-        <Link href="/menu">
+        <Link href="/menu" data-gtm="menu">
           <Image
             src={MenuImg}
             alt="Menu button"
@@ -97,7 +98,7 @@ export const WelcomePage = () => {
         animate="visible"
         className={styles.instagramContainer}
       >
-        <Link href="https://www.instagram.com/aya.cooks.cy">
+        <Link href="https://www.instagram.com/aya.cooks.cy" data-gtm="instagram">
           <Image
             src={InstagramImg}
             alt="Instagram Image"
@@ -159,7 +160,7 @@ export const WelcomePage = () => {
         animate="visible"
         className={styles.phoneContainer}
       >
-        <Link href="tel:+35797999091">
+        <Link href="tel:+35797999091" data-gtm="phone-call">
           <Image
             src={PhoneImg}
             alt="Phone Image"
@@ -194,6 +195,7 @@ export const WelcomePage = () => {
         <Link
           href="https://maps.app.goo.gl/sa4jY4Q2USkkQhSZ6?g_st=ipc"
           target="_blank"
+          data-gtm="address"
         >
           <Image
             src={AdressImg}
