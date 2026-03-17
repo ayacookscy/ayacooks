@@ -1,6 +1,6 @@
 import { Allergen, MenuSection } from "@/types/menuTypes";
 
-// Auto-generated from src/data/menu (03.03) (1).json on 2026-03-03
+// Auto-generated from src/data/menu (17.03) (1).json on 2026-03-17
 // The structure of `menu` MUST mirror the JSON one "1-to-1" so that the app
 // renders exactly the same positions / order / flags as the kitchen menu.
 // Please keep the keys order intact – some UI sections rely on it.
@@ -319,7 +319,6 @@ export const menu: Record<string, MenuSection> = {
       {
         name: "Acala / Spritz Style Sparkling Tea",
         description: "/ Kombucha-style Tea / LTU",
-        price: 8,
         bottlePrice: 30,
       },
     ],
@@ -331,6 +330,12 @@ export const menu: Record<string, MenuSection> = {
         name: "Bortolomiol Prosecco DOC",
         description: "Treviso Miol / Glera / ITA",
         bottlePrice: 29,
+      },
+      {
+        name: "Vasilikon Micro Cøsmos Xinisteri",
+        description: " Pet Nat / Paphos / CYP (N)",
+        price: 10,
+        bottlePrice: 49,
       },
       {
         name: "Vilmart Cuvée Rubis",
@@ -357,10 +362,22 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 40,
       },
       {
-        name: "Anatolikos Pet-Nat",
-        description: "/ Assyrtiko, Malagouzia / GRC",
+        name: "Matías Riccitelli",
+        description: "Kungfu Pet Nat Rose / Malbec / Mendoza / ARG",
         descriptionBold: "(N)",
-        bottlePrice: 48,
+        price: 11,
+        bottlePrice: 55,
+      },
+      {
+        name: "Bersan Cremant de Bourgogne",
+        description: "Chardonnay, Pinot noir / Bourgogne / FRA",
+        bottlePrice: 55,
+      },
+      {
+        name: "Ktima Dymatou Feggari",
+        description: "Apple Cider Pet Nat Method / CYP",
+        descriptionBold: "(N)",
+        bottlePrice: 35,
       },
     ],
   },
@@ -380,8 +397,20 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 55,
       },
       {
-        name: "Anatolikos FineAssyrtiko",
+        name: "Anatolikos Fine Assyrtiko",
         description: "/ Assyrtiko / GRC",
+        bottlePrice: 45,
+      },
+      {
+        name: "Heinrich Naked White",
+        description: "/ Chardonnay, Pinot Blanc / AUT",
+        bottlePrice: 45,
+      },
+      {
+        name: "Domaine Sergiou Atypon 2",
+        description: "/ Assyrtiko & Xinisteri / CYP",
+        descriptionBold: "(N)",
+        price: 10,
         bottlePrice: 45,
       },
       {
@@ -454,11 +483,6 @@ export const menu: Record<string, MenuSection> = {
     name: "Rosé",
     items: [
       {
-        name: "Colterenzio Lagrein Rosé",
-        description: "/ Lagrein / ITA",
-        bottlePrice: 40,
-      },
-      {
         name: "Vouni Panayia Pampela Rosé",
         description: "/ Mavro, Xynisteri / CYP",
         descriptionBold: "(N)",
@@ -498,8 +522,8 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 50,
       },
       {
-        name: "Ktima Dymatou",
-        description: "/ Xynisteri, Morokanella, Vasilissa / CYP",
+        name: "Ktima Dymatou Metamorphosis",
+        description: "/ Giannoudi, Mavro / CYP",
         descriptionBold: "(N)",
         bottlePrice: 55,
       },
@@ -523,15 +547,21 @@ export const menu: Record<string, MenuSection> = {
         bottlePrice: 50,
       },
       {
-        name: "Papargyriou Le Roi Des Montagnes",
-        description: "/ Syrah / CRC",
+        name: "Milan Nestarec",
+        description: "/ Postmoderna / Blaufrankisch / CZE",
         descriptionBold: "(N)",
-        bottlePrice: 75,
+        bottlePrice: 41,
       },
       {
-        name: "Marchesi di Gresy Barbera d'Asti",
-        description: "/ Barbera / ITA",
-        bottlePrice: 46,
+        name: "Rivetto Barbera d'Alba Zio Nando",
+        description: "/ Piemont / ITA",
+        descriptionBold: "(N)",
+        bottlePrice: 65,
+      },
+      {
+        name: "Domaine Vincent Paris Cornas Granit 30",
+        description: "/ Syrah / FRA",
+        bottlePrice: 70,
       },
       {
         name: "Nine Daughters Xinomavro Single Vineyard",
